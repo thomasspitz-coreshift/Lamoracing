@@ -1,0 +1,58 @@
+<section class="sec sec--light" id="contact">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 class="h2" data-split>Parlons de votre prochain<br />week-end de course.</h2>
+    </header>
+    <div class="contact">
+      <div class="contact__intro" data-reveal>
+        <p class="h3">Remplissez le formulaire&nbsp;: l’équipe revient vers vous pour construire votre programme.</p>
+        <ul class="bars">
+          <li>Un devis personnalisé</li>
+          <li>Location, coaching, simulateur ou atelier</li>
+          <li>Débutant, gentleman driver ou pilote confirmé</li>
+        </ul>
+        <div class="direct">
+          <span>Ou directement&nbsp;: <a href="mailto:laurent@lamoracingcar.com">laurent@lamoracingcar.com</a></span>
+          <span>Par téléphone&nbsp;: <a href="tel:+33641771523">06 41 77 15 23</a></span>
+        </div>
+      </div>
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-form data-reveal="scale">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hp"><label>Ne pas remplir <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <div class="field">
+          <label for="f-nom">Nom complet <i>*</i></label>
+          <input id="f-nom" name="nom" type="text" autocomplete="name" placeholder="Prénom Nom" required />
+        </div>
+        <div class="field">
+          <label for="f-tel">Téléphone</label>
+          <input id="f-tel" name="telephone" type="tel" autocomplete="tel" placeholder="06 00 00 00 00" />
+        </div>
+        <div class="field">
+          <label for="f-email">E-mail <i>*</i></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="nom@exemple.fr" required />
+        </div>
+        <div class="field">
+          <label for="f-projet">Votre projet <i>*</i></label>
+          <select id="f-projet" name="projet" required>
+            <option value="" disabled selected>Choisir une option</option>
+            <option>Week-end de course / location</option>
+            <option>Test day</option>
+            <option>Coaching pilote</option>
+            <option>Session simulateur</option>
+            <option>Atelier / entretien</option>
+            <option>Rejoindre l’écurie (pilote)</option>
+            <option>Boutique / merchandising</option>
+            <option>Autre demande</option>
+          </select>
+        </div>
+        <div class="field field--full">
+          <label for="f-msg">Votre message</label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Voiture, circuit, dates, niveau de pilotage…"></textarea>
+        </div>
+        <button class="btn btn--red" type="submit">Envoyer la demande <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+        <p class="form__legal">LAMO Racing Car utilise ces informations uniquement pour répondre à votre demande. Elles ne sont ni revendues ni utilisées à d’autres fins. Vous pouvez demander leur suppression à <a href="mailto:laurent@lamoracingcar.com">laurent@lamoracingcar.com</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
